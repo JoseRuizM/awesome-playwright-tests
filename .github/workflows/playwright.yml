@@ -17,6 +17,12 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Start Server
+      run: npm start &
+      env:
+        CI: true # Set CI environment variable if necessary
+    - name: Wait for Server to be Ready
+      run: sleep 10 # Adjust as necessary
     - name: Run Playwright tests
       run: npx playwright test tests/trello.spec.ts
     - uses: actions/upload-artifact@v3
