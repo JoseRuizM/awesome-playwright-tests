@@ -2,13 +2,14 @@
 // import { GetStartedPage } from './pages/get-started';
 // import { BoardPage } from './pages/board';
 // import { MyBoardsPage } from './pages/my-boards';
-
+/*
 import { test, expect } from "./fixtures/trello-test";
 
 test.beforeAll(async ({ request }) => {
     //clear the database
     await request.post('http://localhost:3000/api/reset');
 });
+
 
 test('Create a new board with a list and cards', async ({ getStartedPage, boardPage, myBoardsPage }) => {
 
@@ -71,9 +72,11 @@ test('Create a new board with a list and cards', async ({ getStartedPage, boardP
     await expect(page.getByText('My Boards')).toBeVisible();
     await expect(page.getByText('Chores')).toBeVisible();
   
-    */
+    
 
     //This solution won't work in parallel we have to limit our test execution to one worker
     //npx playwright test tests/trello.spec.ts --workers 1
 
 });
+
+*/
