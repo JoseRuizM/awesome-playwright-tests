@@ -39,7 +39,7 @@ test('Create a new board with a list and cards', async ({ getStartedPage, boardP
     await myBoardsPage.expectLoaded(['Chores']);
 
 
-    /* OLD CODE - Example
+    /* OLD CODE - Example - March 5th
   
     await page.getByPlaceholder('Name of your first board').click();
     await page.locator('[name="newBoard"]').click();
